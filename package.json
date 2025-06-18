@@ -1,5 +1,6 @@
 {
   "name": "smart-clock",
+  "homepage": "https://talatanik.github.io/smart-clock/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
