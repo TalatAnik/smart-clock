@@ -36,5 +36,5 @@ export default defineConfig({
   server: {
     host: true
   },
-  base: "/smart-clock",
+  base: "/smart-clock/",
 })
