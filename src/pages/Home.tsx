@@ -1,3 +1,4 @@
+import Weather from '../components/Weather'
 import Time from '../components/Time'
 
 export default function Home() {
@@ -11,6 +12,19 @@ export default function Home() {
         width: '100vw',
       }}
     >
+      <section
+        style={{
+          width: '100%',
+          flex: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: '2vh', 
+          marginBottom: '1vh', // Reduced gap
+        }}
+      >
+        <Weather />
+      </section>
       <section
         style={{
           width: '100%',
