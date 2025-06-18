@@ -12,6 +12,7 @@ type WakeLockNavigator = Navigator & {
 interface WakeLockSentinel {
   released: boolean
   release: () => Promise<void>
+  addEventListener?: (type: 'release', listener: () => void) => void
   // You can add more properties/events if needed
 }
 
@@ -24,6 +25,9 @@ export default function useWakeLock() {
         const nav = navigator as WakeLockNavigator
         if (nav.wakeLock) {
           wakeLock = await nav.wakeLock.request('screen')
+          wakeLock.addEventListener?.('release', () => {
+            requestWakeLock()
+          })
         }
       } catch (err) {
         console.error('Wake Lock failed:', err)
