@@ -28,9 +28,9 @@ export default function Weather() {
   // Replace this with real weather API data fetching
   const [weather] = useState<WeatherData[]>(
     [
-      { icon: 'sun', temp: 28, hour: 'Now' },
-      { icon: 'cloud', temp: 27, hour: '13:00' },
-      { icon: 'rain', temp: 25, hour: '14:00' },
+      { icon: 'sun', temp: 28, hour: 'now' },
+      { icon: 'cloud', temp: 27, hour: 'next' },
+      { icon: 'rain', temp: 25, hour: 'prev' },
       { icon: 'storm', temp: 24, hour: '15:00' },
     ]
   )
