@@ -2,7 +2,7 @@ import useWakeLock from './useWakeLock'
 import Home from './pages/Home'
 import './app.css'
 
-// import FlickerLine from './components/FlickerLine'
+import FlickerLine from './components/FlickerLine'
 
 export default function App() {
   useWakeLock()
@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Home />
-      {/* <FlickerLine /> */}
+      <FlickerLine />
     </>
   )
 }
