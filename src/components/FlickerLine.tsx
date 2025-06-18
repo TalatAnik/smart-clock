@@ -10,7 +10,7 @@ export default function FlickerLine() {
   const [flicker, setFlicker] = useState(true)
 
   useEffect(() => {
-    let flickerInterval: NodeJS.Timeout | null = null
+    let flickerInterval: number | null = null
     if (active) {
       flickerInterval = setInterval(() => {
         setFlicker(f => !f)
@@ -24,7 +24,7 @@ export default function FlickerLine() {
   }, [active])
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout
+    let timeout: number
     let start: number | null = null
     let height = window.innerHeight
 

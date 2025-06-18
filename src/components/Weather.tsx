@@ -26,7 +26,7 @@ const ICONS: Record<WeatherData['icon'], any> = {
 
 export default function Weather() {
   // Replace this with real weather API data fetching
-  const [weather, setWeather] = useState<WeatherData[]>(
+  const [weather] = useState<WeatherData[]>(
     [
       { icon: 'sun', temp: 28, hour: 'Now' },
       { icon: 'cloud', temp: 27, hour: '13:00' },
