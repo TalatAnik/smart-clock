@@ -12,7 +12,7 @@ export default defineConfig({
         name: 'Smart Clock',
         short_name: 'Clock',
         start_url: '.',
-        display: 'standalone',
+        display: 'fullscreen',
         background_color: '#000000',
         theme_color: '#0f0f0f',
         icons: [
